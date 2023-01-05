@@ -12,20 +12,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import Jason.Day12_Workshop.exception.RandNoException;
 import Jason.Day12_Workshop.models.Generate;
 
 @Controller
-@RequestMapping(path="/rand")
+//@RequestMapping(path="/")
 public class GenRandNoController {
     
     /**
      * Redirect to the generate.html 
      * and show the input form
      */
-    @GetMapping(path="/show")
+    @GetMapping(path="/")
     public String showRandForm(Model model){
         // Instantiate the generate object 
         // bind the noOfRandNo to the text field
